@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Content with notebooks &#8212; My sample book</title>
+    <title>Informe Exploratorio &#8212; My sample book</title>
   
   
   
@@ -62,8 +62,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
-    <link rel="prev" title="Markdown Files" href="markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,6 +123,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -141,7 +141,7 @@
 
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="#">
   
   
   
@@ -152,8 +152,8 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logoACA.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logoACA.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
   
   
 </a></div>
@@ -172,18 +172,13 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Informe Exploratorio
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-</ul>
-
+        
     </div>
 </nav></div>
     </div>
@@ -367,7 +362,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Content with notebooks</h1>
+    <h1>Informe Exploratorio</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -377,9 +372,33 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-y-seleccion-de-modelos-para-mejorar-metricas">Análisis Exploratorio y Selección de Modelos para mejorar métricas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-de-datos-eda">Analisis exploratorio de datos (EDA)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importacion-de-librerias">Importación de librerias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fuente-de-datos">Fuente de datos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importamos-los-datos">Importamos los datos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrizacion">Parametrización</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explorar-tendencias">Explorar tendencias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manejo-de-variables-categoricas">Manejo de variables categoricas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlaciones-entre-variables-independientes">Correlaciones entre variables independientes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-aprendizaje-automatico-propuestos">Modelos de aprendizaje automático propuestos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodologia-propuesta">Metodología propuesta</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metricas-de-evaluacion-propuestas">Métricas de Evaluación propuestas</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-metricas">Tipos de métricas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desarrollo">Desarrollo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-support-vector-machines">Modelo Support Vector Machines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-random-forest-y-gradient-boosting-classifier">Modelo Random Forest y Gradient Boosting Classifier</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen-rendimiento-de-modelos">Resumen rendimiento de modelos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visibilidad-y-entendimiento-del-modelo">Visibilidad y entendimiento del modelo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-del-modelo">Aplicación del modelo</a></li>
 </ul>
             </nav>
         </div>
@@ -391,83 +410,1487 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="content-with-notebooks">
-<h1>Content with notebooks<a class="headerlink" href="#content-with-notebooks" title="Link to this heading">#</a></h1>
-<p>You can also create content with Jupyter Notebooks. This means that you can include
-code blocks and their outputs in your book.</p>
-<section id="markdown-notebooks">
-<h2>Markdown + notebooks<a class="headerlink" href="#markdown-notebooks" title="Link to this heading">#</a></h2>
-<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
-<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" /></p>
-<p>You can also <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[
-math^{blocks}
-\]</div>
-<p>or</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-\mbox{mean} la_{tex} \\ \\
-math blocks
-\end{aligned}
-\end{split}\]</div>
-<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="informe-exploratorio">
+<h1>Informe Exploratorio<a class="headerlink" href="#informe-exploratorio" title="Link to this heading">#</a></h1>
+<section id="analisis-exploratorio-y-seleccion-de-modelos-para-mejorar-metricas">
+<h2>Análisis Exploratorio y Selección de Modelos para mejorar métricas<a class="headerlink" href="#analisis-exploratorio-y-seleccion-de-modelos-para-mejorar-metricas" title="Link to this heading">#</a></h2>
+<p>En el mundo del análisis de datos y el modelado predictivo, una parte fundamental es comprender en detalle la naturaleza y el comportamiento de los datos con los que estamos trabajando ya que serán el insumo del entrenamiento del modelo. Esto se logra mediante un Análisis Exploratorio de Datos (EDA, por sus siglas en inglés), que nos permite examinar las características de nuestros datos, tanto numéricas como categóricas, y comprender su distribución, tendencias y posibles relaciones entre variables. Esta exploración inicial es crucial para tomar decisiones informadas sobre cómo proceder con el modelado y la predicción.</p>
+<p>El objetivo principal de este informe es realizar un EDA exhaustivo de los datos disponibles hasta el momento, con el fin de entender mejor su estructura y características. Esto nos permitirá identificar posibles problemas, como datos faltantes, valores atípicos o distribuciones no esperadas, ver si hay alta multicolinealidad en datos, mirar cómo se comportan las variables categóricas, y tomar medidas para abordarlos de manera efectiva.</p>
+<p>Además de la exploración de los datos, también nos proponemos seleccionar los modelos de clasificación más adecuados para nuestro conjunto de datos. Para lograr esto, evaluaremos el rendimiento de tres modelos ampliamente utilizados en la clasificación: Support Vector Machines (SVM), Random Forest Classifier y Gradient Boosting Trees. Estos modelos ofrecen enfoques diferentes para la clasificación y pueden adaptarse a una variedad de situaciones y tipos de datos. En este caso, para sacar la probabilidad de dicha clasificación, que al final de cuentas es el enfoque del proyecto</p>
+<p>El proceso de selección de modelos implica entrenar y evaluar cada modelo utilizando métricas específicas, como la precisión (accuracy) y el recall. Además, exploraremos diferentes combinaciones de parámetros (hiperparámetros) para cada modelo, con el objetivo de encontrar la configuración óptima que maximice el rendimiento predictivo.</p>
+<p>En resumen, este informe tiene como objetivo realizar un análisis exhaustivo de nuestros datos mediante un EDA detallado, seguido de la selección y evaluación de modelos de clasificación para predecir con precisión las etiquetas de clasificación, y posteriormente su probabilidad. Al finalizar, esperamos haber obtenido una comprensión profunda de nuestros datos y haber identificado el modelo o modelos que mejor se ajusten a nuestras necesidades de predicción.</p>
 </section>
-<section id="myst-markdown">
-<h2>MyST markdown<a class="headerlink" href="#myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check
-out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,
-or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
-</section>
-<section id="code-blocks-and-outputs">
-<h2>Code blocks and outputs<a class="headerlink" href="#code-blocks-and-outputs" title="Link to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.
-For example, here’s some sample Matplotlib code:</p>
+<section id="analisis-exploratorio-de-datos-eda">
+<h2>Analisis exploratorio de datos (EDA)<a class="headerlink" href="#analisis-exploratorio-de-datos-eda" title="Link to this heading">#</a></h2>
+<section id="importacion-de-librerias">
+<h3>Importación de librerias<a class="headerlink" href="#importacion-de-librerias" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importar las bibliotecas necesarias</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
+<span class="kn">from</span> <span class="nn">statsmodels.stats.outliers_influence</span> <span class="kn">import</span> <span class="n">variance_inflation_factor</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OrdinalEncoder</span><span class="p">,</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>  <span class="c1"># Para clasificación SVM</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span><span class="p">,</span> <span class="n">GradientBoostingClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span><span class="p">,</span><span class="n">GridSearchCV</span><span class="p">,</span><span class="n">ShuffleSplit</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">tree</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span><span class="n">confusion_matrix</span><span class="p">,</span><span class="n">ConfusionMatrixDisplay</span><span class="p">,</span><span class="n">recall_score</span><span class="p">,</span><span class="n">precision_score</span><span class="p">,</span><span class="n">f1_score</span>
+<span class="kn">import</span> <span class="nn">shap</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;contextlib.ExitStack at 0x28e324bb430&gt;
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Pc Com\anaconda3\envs\data_viz_env_financiera\lib\site-packages\tqdm\auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="fuente-de-datos">
+<h3>Fuente de datos<a class="headerlink" href="#fuente-de-datos" title="Link to this heading">#</a></h3>
+<p>Importamos los conjuntos de datos de entrenamiento que contamos por el momento, provenientes de los archivos Eventos_SI_MM.csv y Eventos_NO_MM.csv proporcionados por la alcaldía de Cali. Estos contienen información sobre datos de precipitaciones y algunas características del suelo.</p>
+<p>A continuación podemos ver la biblioteca de datos de las variables iniciales a tomar en cuenta:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Columna</p></th>
+<th class="head"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Elevacion</p></td>
+<td><p>Elevación del punto de movimiento en masa en metros sobre el nivel del mar (msnm)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pendiente</p></td>
+<td><p>Pendiente del punto de movimiento en masa en porcentaje (%)</p></td>
+</tr>
+<tr class="row-even"><td><p>SIM_COB25</p></td>
+<td><p>Abreviatura del nombre de la cobertura de suelo Metodologia Land Corine Escala 1:25000</p></td>
+</tr>
+<tr class="row-odd"><td><p>GEOLOGIA_1</p></td>
+<td><p>Nomenclatura de la unidad geológica asociada al punto de movimiento en masa</p></td>
+</tr>
+<tr class="row-even"><td><p>P_24H</p></td>
+<td><p>Lluvia acumulada en 24 horas en milímetros</p></td>
+</tr>
+<tr class="row-odd"><td><p>P_7DIAS</p></td>
+<td><p>Lluvia acumulada en 7 dias en milímetros</p></td>
+</tr>
+<tr class="row-even"><td><p>P_10DIAS</p></td>
+<td><p>Lluvia acumulada en 10 dias en milímetros</p></td>
+</tr>
+<tr class="row-odd"><td><p>P15DIAS</p></td>
+<td><p>Lluvia acumulada en 15 dias en milímetros</p></td>
+</tr>
+<tr class="row-even"><td><p>P30DIAS</p></td>
+<td><p>Lluvia acumulada en 30 dias en milímetros</p></td>
+</tr>
+<tr class="row-odd"><td><p>P60DIAS</p></td>
+<td><p>Lluvia acumulada en 60 dias en milímetros</p></td>
+</tr>
+<tr class="row-even"><td><p>P90DIAS</p></td>
+<td><p>Lluvia acumulada en 90 dias en milímetros</p></td>
+</tr>
+<tr class="row-odd"><td><p>deslizamientos</p></td>
+<td><p>numero que indica si hubo deslizamiento de tierra en el punto de movimiento en masa</p></td>
+</tr>
+</tbody>
+</table>
+<p>Así mismo, traemos datos nuevos para poder testear el modelo y saber su comportamiento ante datos nunca ha visto, estos son <code class="docutils literal notranslate"><span class="pre">df_nuevos_datos</span></code> y vienen de las consultas a la API de la alcaldia de cali la cual contienen informacion acerca de la precipitacion del suelo que provienen de los sensores en las estaciones alrededor de la ciudad</p>
+</section>
+<section id="importamos-los-datos">
+<h3>Importamos los datos<a class="headerlink" href="#importamos-los-datos" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ruta_data</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;Data&#39;</span><span class="p">,</span><span class="s1">&#39;output&#39;</span><span class="p">)</span>
+<span class="n">data_train</span><span class="o">=</span><span class="s1">&#39;data_entrenamiento_modelo_SVM.csv&#39;</span>
+<span class="n">data_new</span><span class="o">=</span><span class="s1">&#39;cuadricula_datos_lluvia.json&#39;</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fixing random state for reproducibility</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Cargar los datos desde un archivo CSV</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ruta_data</span><span class="p">,</span> <span class="n">data_train</span><span class="p">)</span>
+    <span class="p">)</span>
 
-<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span>
-<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)))</span>
-
-
-<span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <span class="n">Line2D</span>
-<span class="n">custom_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">.5</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">)]</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">custom_lines</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Cold&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hot&#39;</span><span class="p">]);</span>
+<span class="c1"># Se carga el dataframe con los datos nuevos el cual va a predecir el modelo </span>
+<span class="n">df_nuevos_datos</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ruta_data</span><span class="p">,</span> <span class="n">data_new</span><span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Se reemplaza los nombres de las columnas para el entrenamiento de acuerdo al dataframe que va a recibir el modelo</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Elevacion&#39;</span><span class="p">:</span><span class="s1">&#39;ELEVACION&#39;</span><span class="p">,</span> <span class="s1">&#39;Pendiente&#39;</span><span class="p">:</span><span class="s1">&#39;PENDIENT&#39;</span><span class="p">,</span> <span class="s1">&#39;P_24H&#39;</span><span class="p">:</span><span class="s1">&#39;24h&#39;</span><span class="p">,</span><span class="s1">&#39;P_7DIAS&#39;</span><span class="p">:</span><span class="s1">&#39;7d&#39;</span><span class="p">,</span> <span class="s1">&#39;P_10DIAS&#39;</span> <span class="p">:</span> <span class="s1">&#39;10d&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;P15DIAS&#39;</span><span class="p">:</span> <span class="s1">&#39;15d&#39;</span><span class="p">,</span><span class="s1">&#39;P30DIAS&#39;</span> <span class="p">:</span> <span class="s1">&#39;30d&#39;</span><span class="p">,</span> <span class="s1">&#39;P60DIAS&#39;</span> <span class="p">:</span> <span class="s1">&#39;60d&#39;</span><span class="p">,</span> <span class="s1">&#39;P90DIAS&#39;</span> <span class="p">:</span> <span class="s1">&#39;90d&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Re-ordenamos los registros de manera aleatoria para que pierdan el orden que tenian</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_nuevos_datos</span><span class="o">=</span><span class="n">df_nuevos_datos</span><span class="p">[</span><span class="n">df_nuevos_datos</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/09d79d7122094cb0f63569e187632beddce38ec285809b65da60f5f6ffbddd0d.png" src="_images/09d79d7122094cb0f63569e187632beddce38ec285809b65da60f5f6ffbddd0d.png" />
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ELEVACION</th>
+      <th>PENDIENT</th>
+      <th>SIM_COB25</th>
+      <th>GEOLOGIA_1</th>
+      <th>24h</th>
+      <th>7d</th>
+      <th>10d</th>
+      <th>15d</th>
+      <th>30d</th>
+      <th>60d</th>
+      <th>90d</th>
+      <th>deslizamientos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>823</th>
+      <td>1043.167358</td>
+      <td>15.887532</td>
+      <td>VEGSEC</td>
+      <td>Kv</td>
+      <td>2.0</td>
+      <td>14.5</td>
+      <td>46.6</td>
+      <td>47.6</td>
+      <td>72.1</td>
+      <td>162.9</td>
+      <td>258.9</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>412</th>
+      <td>1903.744263</td>
+      <td>51.665653</td>
+      <td>MSPNCU</td>
+      <td>Kv</td>
+      <td>0.2</td>
+      <td>56.8</td>
+      <td>101.0</td>
+      <td>132.4</td>
+      <td>168.4</td>
+      <td>276.6</td>
+      <td>358.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>247</th>
+      <td>1063.869141</td>
+      <td>42.997940</td>
+      <td>ZUC</td>
+      <td>Kv</td>
+      <td>0.0</td>
+      <td>182.0</td>
+      <td>207.0</td>
+      <td>244.0</td>
+      <td>566.0</td>
+      <td>735.0</td>
+      <td>878.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>185</th>
+      <td>1099.222412</td>
+      <td>36.793831</td>
+      <td>ZUC</td>
+      <td>TOg</td>
+      <td>7.6</td>
+      <td>83.5</td>
+      <td>110.0</td>
+      <td>213.5</td>
+      <td>343.7</td>
+      <td>452.1</td>
+      <td>531.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>170</th>
+      <td>1161.213745</td>
+      <td>54.443008</td>
+      <td>ZUC</td>
+      <td>TOg</td>
+      <td>7.6</td>
+      <td>83.5</td>
+      <td>110.0</td>
+      <td>213.5</td>
+      <td>343.7</td>
+      <td>452.1</td>
+      <td>531.0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_nuevos_datos</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
-<p>There is a lot more that you can do with outputs (such as including interactive outputs)
-with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>FID</th>
+      <th>OBJECTID_1</th>
+      <th>COD_COB25_</th>
+      <th>NOM_COB25</th>
+      <th>SIM_COB25</th>
+      <th>GEOLOGIA_1</th>
+      <th>GEOLOGIA_2</th>
+      <th>ELEVACION</th>
+      <th>PENDIENT</th>
+      <th>Shape_Leng</th>
+      <th>...</th>
+      <th>Estacion</th>
+      <th>id</th>
+      <th>24h</th>
+      <th>7d</th>
+      <th>10d</th>
+      <th>15d</th>
+      <th>30d</th>
+      <th>60d</th>
+      <th>90d</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>31111</td>
+      <td>Bosque mixto denso alto de tierra firme</td>
+      <td>BNDALT</td>
+      <td>Ke</td>
+      <td>Formacion Espinal</td>
+      <td>2061.900391</td>
+      <td>53.671722</td>
+      <td>498.976929</td>
+      <td>...</td>
+      <td>LA TERESITA</td>
+      <td>23</td>
+      <td>65.6</td>
+      <td>115.0</td>
+      <td>0.0</td>
+      <td>148.0</td>
+      <td>189.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>POLYGON ((1044979.707 873707.899, 1044846.653 ...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>31111</td>
+      <td>Bosque mixto denso alto de tierra firme</td>
+      <td>BNDALT</td>
+      <td>Ke</td>
+      <td>Formacion Espinal</td>
+      <td>2127.599609</td>
+      <td>49.409256</td>
+      <td>995.407241</td>
+      <td>...</td>
+      <td>LA TERESITA</td>
+      <td>23</td>
+      <td>65.6</td>
+      <td>115.0</td>
+      <td>0.0</td>
+      <td>148.0</td>
+      <td>189.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>POLYGON ((1044979.752 873984.389, 1044719.714 ...</td>
+    </tr>
+  </tbody>
+</table>
+<p>2 rows × 21 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="parametrizacion">
+<h3>Parametrización<a class="headerlink" href="#parametrizacion" title="Link to this heading">#</a></h3>
+<p>Como buenas practicas, empezamos a parametrizar nuestro desarrollo sacando las columnas objetivo, varaibles a eliminar, variables numericas y categroicas, etc</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">independent_var_erase</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;SIM_COB25&#39;</span><span class="p">,</span><span class="s1">&#39;GEOLOGIA_1&#39;</span><span class="p">]</span>
+<span class="n">dependent_var</span><span class="o">=</span><span class="s1">&#39;deslizamientos&#39;</span>
+<span class="n">independent_var</span><span class="o">=</span><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">independent_var_erase</span> <span class="ow">and</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dependent_var</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">independent_var</span><span class="p">]</span>
+<span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">dependent_var</span><span class="p">]</span>
+
+<span class="c1"># Seleccionar columnas categoricas</span>
+<span class="n">VAR_categorical_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">cname</span> <span class="k">for</span> <span class="n">cname</span> <span class="ow">in</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">X</span><span class="p">[</span><span class="n">cname</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="s2">&quot;object&quot;</span><span class="p">]</span>
+
+<span class="c1"># Seleccionar columnas numericas</span>
+<span class="n">VAR_numerical_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">cname</span> <span class="k">for</span> <span class="n">cname</span> <span class="ow">in</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">X</span><span class="p">[</span><span class="n">cname</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;int64&#39;</span><span class="p">,</span> <span class="s1">&#39;float64&#39;</span><span class="p">]]</span>
+
+<span class="c1"># Total de columnas</span>
+<span class="n">VAR_cols</span> <span class="o">=</span> <span class="n">VAR_categorical_cols</span> <span class="o">+</span> <span class="n">VAR_numerical_cols</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Variables categoricas: &#39;</span><span class="p">,</span><span class="n">VAR_categorical_cols</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Variables numericas: &#39;</span><span class="p">,</span><span class="n">VAR_numerical_cols</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Variables independientes: &#39;</span><span class="p">,</span><span class="n">VAR_cols</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variables categoricas:  []
+Variables numericas:  [&#39;ELEVACION&#39;, &#39;PENDIENT&#39;, &#39;24h&#39;, &#39;7d&#39;, &#39;10d&#39;, &#39;15d&#39;, &#39;30d&#39;, &#39;60d&#39;, &#39;90d&#39;]
+Variables independientes:  [&#39;ELEVACION&#39;, &#39;PENDIENT&#39;, &#39;24h&#39;, &#39;7d&#39;, &#39;10d&#39;, &#39;15d&#39;, &#39;30d&#39;, &#39;60d&#39;, &#39;90d&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="explorar-tendencias">
+<h3>Explorar tendencias<a class="headerlink" href="#explorar-tendencias" title="Link to this heading">#</a></h3>
+<p>En esta sección el objetivo es identificar posibles problemas, como datos faltantes, valores atípicos o distribuciones no esperadas, ver si hay alta multicolinealidad en datos, mirar como se comportan las variables categoricas, comparar modelos de clasificación parametricos y no parametricos y tomar medidas para abordarlos de manera efectiva.</p>
+<p>Empezamos viendo como se comportan ciertas varaibles numericas respecto a nuestra varaible objetivo, en ese caso vemos que tenemos que para puntos de movimiento en masa donde ha habido deslizamientos de tierra, existe mayor cantidad de lluvia acumulada en mm en los ultimos 15 dias en comparacion con los que no han presentado deslizamiento. Esto nos da un indicio de que las variables de precipitacion son importantes para estimar si exite deslizamientos o no</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Configuramos el estilo de Seaborn</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+
+<span class="c1"># Creamos el histograma utilizando Seaborn</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;deslizamientos&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">],</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;15d&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;deslizamientos&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">],</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;15d&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># Añadimos etiquetas y título</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;15d&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frecuencia&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histograma de Precipitación ultimos 15 dias&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="c1"># Mostramos el histograma</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/b35e6213eb65d3abfdefd4527f68cebbe837a1b813c96d60efb5af31c3c1b40f.png" src="_images/b35e6213eb65d3abfdefd4527f68cebbe837a1b813c96d60efb5af31c3c1b40f.png" />
+</div>
+</div>
+<p>Revisamos si hay valores nulos</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Verificamos si existen valores nulos</span>
+<span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ELEVACION         0
+PENDIENT          0
+SIM_COB25         0
+GEOLOGIA_1        0
+24h               0
+7d                0
+10d               0
+15d               0
+30d               0
+60d               0
+90d               0
+deslizamientos    0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ahora veremos como se comportan las varaibles categoricas para saber como tratarlas</p>
+<p>Previamente, se propone convertir las variables categoricas a label numericos mediante la funcion de <code class="docutils literal notranslate"><span class="pre">OrdinalEncoder()</span></code> del paquete sklearn, esta organiza las categorias en orden alfabetico y luego les asigna numeros enteros empezando desde el 0, 1, 2 y asi sucesivamente</p>
+</section>
+<section id="manejo-de-variables-categoricas">
+<h3>Manejo de variables categoricas<a class="headerlink" href="#manejo-de-variables-categoricas" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conteo_categorias</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;SIM_COB25&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Conteo&#39;</span><span class="p">)</span>
+<span class="n">conteo_categorias</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SIM_COB25</th>
+      <th>Conteo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ABAFAL</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ABAFBA</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ABDALT</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ABDBAJ</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ASD</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>BG</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>BNAALT</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>BNABAJ</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>BNDALT</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>BNDBAJ</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>BNFPNC</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>BNFVN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>HELECH</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>MSCULV</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>MSPNCU</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>OAC</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>OCABA</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>OCARD</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>OICC</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>OISC</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>PCU</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>PCUAR</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>PCURA</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>PIN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>RIO</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>VEGSEC</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>ZUC</td>
+      <td>499</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>ZUD</td>
+      <td>61</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Para la anterior varible categorica, vemos que hay varias categorias con muy pocas frcuencias, esto podria ser un problema ya que al momento de entrenar los modelos, puede que ciertos registros con pocas frecuencias queden en el conjunto de datos de testeo y no de entrenamiento, haciendo que el modelo no se entrene o no se aprenda estas categorias que quedan por fuera y no las reconozca.</p>
+<p>Veamos la siguiente</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conteo_categorias2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;GEOLOGIA_1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Conteo&#39;</span><span class="p">)</span>
+<span class="n">conteo_categorias2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GEOLOGIA_1</th>
+      <th>Conteo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Kv</td>
+      <td>429</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Qal</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Qca</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Qca(RMel)</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Qca1(RPan)</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Qca2(RPan)</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Qd</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Ql/Kv</td>
+      <td>199</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>TOf</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>TOg</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>TQj</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Tgp</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Ttp</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Vemos que es el mismo caso con la variable <code class="docutils literal notranslate"><span class="pre">GEOLOGIA_1</span></code>.</p>
+<p>En este caso se sugiere o eliminar esta varaible dado al ruido que puede aportar al modelo o eliminar los registros cuyas categorias pueden causar problemas. Al eliminar los registros, podriamos estar perdiendo informacion util que nos puedes estar aportando las otras columnas</p>
+</section>
+<section id="correlaciones-entre-variables-independientes">
+<h3>Correlaciones entre variables independientes<a class="headerlink" href="#correlaciones-entre-variables-independientes" title="Link to this heading">#</a></h3>
+<p>Queremos que haya la menos correlacion lineal y no lineal entre las varaibles independientes, ya que queremos que cada variable aporte su varol unico al modelo, y evitar redundancias</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Correlaciones entre variables independientes</span>
+<span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">VAR_numerical_cols</span><span class="p">]</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;pearson&#39;</span><span class="p">)</span>
+
+<span class="c1"># Configurar el estilo del mapa de calor</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+
+<span class="c1"># Crear el mapa de calor de correlación</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+
+<span class="c1"># Añadir título</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Mapa de calor de correlación entre variables numéricas&#39;</span><span class="p">)</span>
+
+<span class="c1"># Mostrar el mapa de calor</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/fa1ead319b9e20def47f8e693f40c7d0015ded1c2ef1fca56aaffd141d0128ca.png" src="_images/fa1ead319b9e20def47f8e693f40c7d0015ded1c2ef1fca56aaffd141d0128ca.png" />
+</div>
+</div>
+<p>Observamos que existe una alta correlacion lineal entre las variables principalmente de precipitacion, dandonos a entender que no son del todo independientes y que a medida que suben los dias (10 dias, 15 dias, 30 dias y así) aumenta su dependencia, es decir, lo que explica una varaible ya lo logra a explicar otra. Esto puede causar overfitting</p>
+<p>Ahora, vemos que pasa si entrenamos 1 solo arbol de decision. Esto nos puede servir mucho para explorar a qué el modelo de aprendisaje automatico les esta dando mas importancia.</p>
+<p>Como vemos en el arbol de decision entrenado abajo, empieza a hacer reglas de decision para ciertas variables, en este caso, para la variable de P15DIAS es la que empieza a parametrizar las tomas de decisiones</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="bp">cls</span><span class="o">=</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">modelo_arbol</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">VAR_numerical_cols</span><span class="p">],</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="mi">30</span><span class="p">))</span>
+<span class="n">tree</span><span class="o">.</span><span class="n">plot_tree</span><span class="p">(</span><span class="n">modelo_arbol</span><span class="p">,</span><span class="n">feature_names</span><span class="o">=</span><span class="n">X</span><span class="p">[</span><span class="n">VAR_numerical_cols</span><span class="p">]</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span><span class="n">filled</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/7cff0dde39fef086216c754dae4ab2bc8597cc80fd4393da2124e2db1ee69675.png" src="_images/7cff0dde39fef086216c754dae4ab2bc8597cc80fd4393da2124e2db1ee69675.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="modelos-de-aprendizaje-automatico-propuestos">
+<h2>Modelos de aprendizaje automático propuestos<a class="headerlink" href="#modelos-de-aprendizaje-automatico-propuestos" title="Link to this heading">#</a></h2>
+<p>Dentro de los modelos de aprendizaje automático para problemas de clasificación, se encuentran la familia de árboles de decisión, como Decision Trees, Random Forest, XGBoost (estos 2 últimos de ensamble), SVM (support vector machines), entre otros:</p>
+<ul class="simple">
+<li><p>Máquinas de Vectores de Soporte (SVM):</p></li>
+</ul>
+<p>Busca el hiperplano que mejor separa las clases en un espacio multidimensional.</p>
+<p>Puede manejar tanto problemas de clasificación lineal como no lineal mediante el uso de diferentes funciones de kernel.</p>
+<p>Es eficaz en conjuntos de datos de tamaño moderado a pequeño y es robusto frente a la presencia de ruido.</p>
+<p>Este modelo es ideal que el conjunto de datos esté escalador de manera estandar, ya que las diferencias de magnitudes entre diferentes dimensiones puede llegar a afectar el rendimiento</p>
+<ul class="simple">
+<li><p>Árboles de Decisión:</p></li>
+</ul>
+<p>Representa un conjunto de reglas de decisión en forma de árbol.</p>
+<p>Es fácil de entender e interpretar, ya que se puede visualizar fácilmente.</p>
+<p>Puede manejar datos numéricos y categóricos y es resistente a valores atípicos.</p>
+<ul class="simple">
+<li><p>Bosques Aleatorios (Random Forest):</p></li>
+</ul>
+<p>Consiste en una colección de árboles de decisión, donde cada árbol se entrena con una muestra aleatoria del conjunto de datos.</p>
+<p>Reduce el sobreajuste promediando los resultados de múltiples árboles.</p>
+<p>Es robusto y puede manejar conjuntos de datos grandes con muchas características.</p>
+<ul class="simple">
+<li><p>XGBoost (Extreme Gradient Boosting Trees):</p></li>
+</ul>
+<p>Implementa un algoritmo de refuerzo de gradiente extremo, que combina múltiples árboles de decisión para mejorar la precisión del modelo de forma secuencial.</p>
+<p>Utiliza técnicas avanzadas de regularización y optimización para mejorar la generalización del modelo y evitar el sobreajuste.</p>
+<p>Es altamente eficiente y escalable, adecuado para conjuntos de datos grandes y complejos, y es una opción popular en competiciones de ciencia de datos.</p>
+</section>
+<section id="metodologia-propuesta">
+<h2>Metodología propuesta<a class="headerlink" href="#metodologia-propuesta" title="Link to this heading">#</a></h2>
+<p>Ahora, la idea es hacer una tubería de datos tal que cuando lleguen los datos nuevos a estimar, estos pasen por las mismas transformaciones por las que pasaron los datos de entrenamiento. Más precisamente hablando, el pipeline en scikit-learn es una herramienta que te permite concatenar varios pasos de procesamiento de datos y modelado en un solo objeto. Esto facilita la construcción, entrenamiento y evaluación de modelos de aprendizaje automático, ya que puedes encapsular todo el flujo de trabajo en una única estructura.</p>
+<figure class="align-center" id="pipelines-fig">
+<img alt="_images/Resource-Pipeline-CU-Predictor-Favorabilidad-Compra-Acciones.png" src="_images/Resource-Pipeline-CU-Predictor-Favorabilidad-Compra-Acciones.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Funcionamiento de tuberias (Pipelines) en SciKit-learn</span><a class="headerlink" href="#pipelines-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>De la misma manera, se busca optimizar las estimaciones y la calidad de los modelos, por lo que se usa la metodología de Grid search o búsqueda de malla para optimizar parámetros dentro de los modelos. Es una herramienta poderosa para optimizar los parámetros de un modelo de aprendizaje automático. Permite definir una cuadrícula de valores para diferentes parámetros del modelo y busca exhaustivamente la mejor combinación de estos parameros, a lo que se le llama hiperparametrizacion.</p>
+<p>En términos más simples, el GridSearchCV realiza una búsqueda exhaustiva sobre una cuadrícula de valores especificados para los hiperparámetros de un estimador. Esto permite encontrar la combinación óptima de hiperparámetros que maximiza la precisión o cualquier otra métrica de evaluación definida.</p>
+<p>La idea detrás del GridSearchCV es que, en lugar de ajustar manualmente los hiperparámetros del modelo y evaluar su rendimiento, el proceso se automatiza y se realiza de manera sistemática. Esto ahorra tiempo y esfuerzo, ya que el GridSearchCV evalúa todas las combinaciones posibles de los hiperparámetros dentro de la cuadrícula especificada y selecciona la mejor combinación según la métrica de evaluación especificada.</p>
+<figure class="align-center" id="grid-search-fig">
+<img alt="_images/Grid_serach.png" src="_images/Grid_serach.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Funcionamiento de Busqueda de malla (Grid_search) en SciKit-learn</span><a class="headerlink" href="#grid-search-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Por último, se propone usar validación cruzada aleatoria y dividida. Esto con el proposito de no usar la clasica division unitaria de entrenamiento-pruba, ya que en este tipo de división el entrenamiento o aprendizake del modelo puede quedar sesgado debido a que al dividir aleatoriamente no sabemos con que proporción de los datos el modelo aprende, por ejemplo, al dividir una sola vez el conjunto de datos nos puede quedar que en el conjunto de test solo haya valores con el label de 0 (no deslizamiento en este caso) y en el entrenamiento solo existan registros del label 1 (deslizamientos), esto puede ocasionar que el modelo no aprenda de la manera más optima.</p>
+<p>Con la validación cruzada aleatoria y dividida (shuffle-split). En la validación cruzada de división aleatoria, cada división (split) está compuesta de tanto train_size puntos (disyuntos) para el conjunto de entrenamiento y tantos test_size puntos (disjuntos) para el conjunto de prueba, se fijen inicialmente. Esta división se repite n veces, de forma aleatoria. Por ejemplo en la siguiente imagen, para la ejecución de cuatro iteraciones de división de un conjunto de datos que consta de 10 puntos, con un conjunto de entrenamiento de 5 puntos y conjuntos de prueba de 2 puntos cada uno</p>
+<figure class="align-center" id="shuffle-split-fig">
+<img alt="_images/shuffle_split.png" src="_images/shuffle_split.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Funcionamiento de Validación cruzada aleatoria (Shuffle split) en SciKit-learn</span><a class="headerlink" href="#shuffle-split-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="metricas-de-evaluacion-propuestas">
+<h3>Métricas de Evaluación propuestas<a class="headerlink" href="#metricas-de-evaluacion-propuestas" title="Link to this heading">#</a></h3>
+<p>En el desarrollo de nuestro modelo de clasificación binaria para la identificación de zonas propensas a deslizamientos de tierra, enfrentamos una decisión crucial en la selección de la métrica de rendimiento a optimizar. La esencia de nuestra clasificación distingue dos categorías claves: la clase positiva (1), que indica la presencia de un deslizamiento de tierra, y la clase negativa (0), que señala su ausencia.</p>
+<figure class="align-center" id="matriz-confusion-fig">
+<img alt="_images/matriz_confusion_ejemplo.png" src="_images/matriz_confusion_ejemplo.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Matriz de Confusión</span><a class="headerlink" href="#matriz-confusion-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Si vemos la anterior matriz de confusió, para nuestro análisis, es vital priorizar la reducción de los falsos negativos (FN - false negatives), es decir, las situaciones donde el modelo predice erróneamente que no habrá deslizamiento de tierra cuando en realidad sí ocurre. La ocurrencia de estos errores podría tener consecuencias significativas en términos de seguridad y preparación ante desastres naturales.</p>
+<section id="tipos-de-metricas">
+<h4>Tipos de métricas<a class="headerlink" href="#tipos-de-metricas" title="Link to this heading">#</a></h4>
+<p><strong>Accuracy</strong></p>
+<p>Ya vimos una forma de resumir el resultado en la matriz de confusión, calculando su accuracy, que puede expresarse como</p>
+<div class="math notranslate nohighlight">
+\[ \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN} \]</div>
+<p>En otras palabras, el accuracy es el número de predicciones correctas (TP y TN) dividido por el número de todas las muestras (todas las entradas de la matriz de confusión sumadas).</p>
+<p><strong>Precision</strong></p>
+<p>Precision mide cuántas de las muestras predichas como positivas son realmente positivas, es decir, precision intenta responder a la siguiente pregunta: ¿qué proporción de identificaciones positivas fue correcta?</p>
+<div class="math notranslate nohighlight">
+\[ \text{Precision} = \frac{TP}{TP + FP} \]</div>
+<p>Precision se utiliza como métrica de rendimiento cuando el objetivo es limitar el número de falsos positivos.</p>
+<p><strong>Recall</strong></p>
+<p>El recall mide cuántas de las muestras de la clase positiva son realmente predichas positivas, es decir, recall intenta responder a la siguiente pregunta: ¿qué proporción de positivos reales se identificó en forma correcta?</p>
+<div class="math notranslate nohighlight">
+\[ \text{Recall} = \frac{TP}{TP + FN} \]</div>
+<p>Recall se utiliza como métrica de rendimiento cuando el objetivo es limitar el número de falsos negativos.</p>
+<p>Con este objetivo en mente, la métrica que hemos decidido optimizar es el recall (también conocido como sensibilidad). El recall mide la capacidad del modelo para identificar correctamente los verdaderos casos positivos de deslizamientos de tierra entre todos los casos reales. Un recall alto implica que el modelo es efectivo en la detección de la mayoría de los eventos de deslizamientos, minimizando así el riesgo de no alertar sobre posibles desastres.</p>
+<p>Optimizar el recall, sin embargo, puede llevar a un incremento en los falsos positivos —predicciones incorrectas de deslizamientos donde no ocurrirán—. Aunque esto podría considerarse un costo menor en comparación con los riesos de omitir alertas reales, es crucial implementar un equilibrio adecuado con la precisión, que mide la proporción de predicciones positivas correctas entre todas las predicciones positivas realizadas por el modelo.</p>
+<p>Nuestra estrategia para calibrar el modelo se centra en maximizar el recall para asegurar una efectiva detección de todos los potenciales deslizamientos de tierra, mientras mantenemos un nivel aceptable de precisión para limitar las falsas alarmas. Esta aproximación está diseñada para ofrecer la máxima protección y preparación, alineándose con las prioridades de seguridad y respuesta ante emergencias de nuestra comunidad.</p>
+</section>
+</section>
+</section>
+<section id="desarrollo">
+<h2>Desarrollo<a class="headerlink" href="#desarrollo" title="Link to this heading">#</a></h2>
+<p>Dividimos el conjunto de datos de entrenamiento de manera aleatoria y dividida, entrenando con 60% de los registros y testeando con el 40% de los registros en cada 10 split. Pero antes sacamos un conjunto de datos de Validación para medir rendimientos</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_valid</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_valid</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">train_size</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shuffle_split</span> <span class="o">=</span> <span class="n">ShuffleSplit</span><span class="p">(</span><span class="n">test_size</span><span class="o">=</span><span class="mf">.4</span><span class="p">,</span> <span class="n">train_size</span><span class="o">=</span><span class="mf">.6</span><span class="p">,</span> <span class="n">n_splits</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="modelo-support-vector-machines">
+<h3>Modelo Support Vector Machines<a class="headerlink" href="#modelo-support-vector-machines" title="Link to this heading">#</a></h3>
+<p>Definimos el preprocesamiento de datos, acá buscamos aplicar diversas transformaciones a diferentes columnas antes de entrenar el modelo</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Paso 1: Define el preprocesamiento de datos</span>
+<span class="n">preprocessor_svc</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">(</span>
+    <span class="n">transformers</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;num&#39;</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">VAR_numerical_cols</span><span class="p">)</span>
+    <span class="p">],</span>
+    <span class="n">remainder</span><span class="o">=</span><span class="s1">&#39;passthrough&#39;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Con el objetivo de hacer un grid search (busqueda de malla), para hiperparametrizar cada uno de las 3 clases de clasificadores, se define param_grid, que contiene diferentes combinaciones de parametros para cada uno de los modelos</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_grid_svc</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;classifier__C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="s1">&#39;classifier__kernel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="s1">&#39;rbf&#39;</span><span class="p">,</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">],</span><span class="s1">&#39;classifier__gamma&#39;</span><span class="p">:[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span><span class="s1">&#39;classifier__probability&#39;</span><span class="p">:[</span><span class="kc">True</span><span class="p">]}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>El pipeline se utiliza para dejar encapsulado los pasos de preprocesamientos necesario previos a la estimación. Asi, al estimar con este objeto tipo <code class="docutils literal notranslate"><span class="pre">Pipeline</span></code> nos aseguramos de que los nuevos datos sin procesar se reprocesen antes de la estimación nueva</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipeline_svc</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
+        <span class="p">(</span><span class="s1">&#39;preprocessor&#39;</span><span class="p">,</span> <span class="n">preprocessor_svc</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">SVC</span><span class="p">())</span>
+    <span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Utilizamos GridSearchCV para hacer todas las combinaciones posibles y buscar los mejores parámetros</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grid_search_svc</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipeline_svc</span><span class="p">,</span> <span class="n">param_grid_svc</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">shuffle_split</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;recall&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ajuste_svc</span><span class="o">=</span><span class="n">grid_search_svc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imprimir los resultados</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Modelo ganador Support Vector Machines:&quot;</span><span class="p">,</span> <span class="n">ajuste_svc</span><span class="o">.</span><span class="n">best_estimator_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mejor combinación de parámetros:&quot;</span><span class="p">,</span> <span class="n">ajuste_svc</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Puntaje de recall (recuperación) en el conjunto de entrenamiento:&quot;</span><span class="p">,</span> <span class="n">ajuste_svc</span><span class="o">.</span><span class="n">best_score_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Modelo ganador Support Vector Machines: Pipeline(steps=[(&#39;preprocessor&#39;,
+                 ColumnTransformer(remainder=&#39;passthrough&#39;,
+                                   transformers=[(&#39;num&#39;, StandardScaler(),
+                                                  [&#39;ELEVACION&#39;, &#39;PENDIENT&#39;,
+                                                   &#39;24h&#39;, &#39;7d&#39;, &#39;10d&#39;, &#39;15d&#39;,
+                                                   &#39;30d&#39;, &#39;60d&#39;, &#39;90d&#39;])])),
+                (&#39;classifier&#39;, SVC(C=0.1, gamma=1, probability=True))])
+Mejor combinación de parámetros: {&#39;classifier__C&#39;: 0.1, &#39;classifier__gamma&#39;: 1, &#39;classifier__kernel&#39;: &#39;rbf&#39;, &#39;classifier__probability&#39;: True}
+Puntaje de recall (recuperación) en el conjunto de entrenamiento: 0.9839330156061505
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="modelo-random-forest-y-gradient-boosting-classifier">
+<h3>Modelo Random Forest y Gradient Boosting Classifier<a class="headerlink" href="#modelo-random-forest-y-gradient-boosting-classifier" title="Link to this heading">#</a></h3>
+<p>Estos 2 modelos se desarrollan juntos ya que tienen el mismo preprocesamientos de datos, a diferencia de del Support Vector Machines que necestia un preprosesamiento diferente</p>
+<p>Definimos nuestro diccionario de clasificadores. Acá buscamos dejar en una estructura los 2 tipos de clasificadores que usaremos</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">classifiers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;RandomForestClassifier&#39;</span><span class="p">:</span> <span class="n">RandomForestClassifier</span><span class="p">(),</span>
+    <span class="s1">&#39;GradientBoostingClassifier&#39;</span><span class="p">:</span> <span class="n">GradientBoostingClassifier</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Con el objetivo de hacer un grid search (busqueda de malla), para hiperparametrizar cada uno de las 2 clases de clasificadores de la familia de arboles, se define param_grid, que contiene diferentes combinaciones de parametros para cada uno de los 2 modelos</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;RandomForestClassifier&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;classifier__n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">],</span> <span class="s1">&#39;classifier__max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span><span class="s1">&#39;classifier__min_samples_split&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span><span class="s1">&#39;classifier__min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]},</span>
+    <span class="s1">&#39;GradientBoostingClassifier&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;classifier__n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">],</span> <span class="s1">&#39;classifier__learning_rate&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">],</span> <span class="s1">&#39;classifier__max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span><span class="s1">&#39;classifier__min_samples_split&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ahora juntamos los 2 pasos anteriores para hacer un pipeline para cada tipo de modelo. El pipeline se utiliza para dejar encapsulado los pasos de preprocesamientos necesario previos a la estimación. Asi, al estimar con este objeto tipo <code class="docutils literal notranslate"><span class="pre">Pipeline</span></code> nos aseguramos de que los nuevos datos sin procesar se reprocesen antes de la estimación nueva</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definir un diccionario de pipelines</span>
+<span class="n">pipelines</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">classifier</span> <span class="ow">in</span> <span class="n">classifiers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">pipelines</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
+        <span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">classifier</span><span class="p">)</span>
+    <span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipelines</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;RandomForestClassifier&#39;: Pipeline(steps=[(&#39;classifier&#39;, RandomForestClassifier())]),
+ &#39;GradientBoostingClassifier&#39;: Pipeline(steps=[(&#39;classifier&#39;, GradientBoostingClassifier())])}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Utiliza GridSearchCV para hacer todas las combinaciones posibles y buscar los mejores parámetros</span>
+<span class="n">best_models</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">pipeline</span> <span class="ow">in</span> <span class="n">pipelines</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">grid_search2</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">[</span><span class="n">name</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="n">shuffle_split</span><span class="p">,</span><span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;recall&#39;</span><span class="p">)</span>
+    <span class="n">grid_search2</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="n">msg_training</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Rendimiento en training -&gt; </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2"> Puntaje recall en entrenamiento: </span><span class="si">{</span><span class="n">grid_search2</span><span class="o">.</span><span class="n">best_score_</span><span class="si">}</span><span class="s2">, </span><span class="se">\n</span><span class="s2"> modelo ganador: </span><span class="si">{</span><span class="n">grid_search2</span><span class="o">.</span><span class="n">best_estimator_</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2"> mejor combinacion de parametros: </span><span class="si">{</span><span class="n">grid_search2</span><span class="o">.</span><span class="n">best_params_</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">msg_training</span><span class="p">)</span>
+    <span class="n">best_models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">grid_search2</span><span class="o">.</span><span class="n">best_estimator_</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rendimiento en training -&gt; RandomForestClassifier 
+ Puntaje recall en entrenamiento: 0.9309538626857566, 
+ modelo ganador: Pipeline(steps=[(&#39;classifier&#39;, RandomForestClassifier(n_estimators=200))]) 
+ mejor combinacion de parametros: {&#39;classifier__max_depth&#39;: None, &#39;classifier__min_samples_leaf&#39;: 1, &#39;classifier__min_samples_split&#39;: 2, &#39;classifier__n_estimators&#39;: 200}
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rendimiento en training -&gt; GradientBoostingClassifier 
+ Puntaje recall en entrenamiento: 0.935184557628134, 
+ modelo ganador: Pipeline(steps=[(&#39;classifier&#39;,
+                 GradientBoostingClassifier(learning_rate=0.01, max_depth=10,
+                                            min_samples_split=10,
+                                            n_estimators=50))]) 
+ mejor combinacion de parametros: {&#39;classifier__learning_rate&#39;: 0.01, &#39;classifier__max_depth&#39;: 10, &#39;classifier__min_samples_split&#39;: 10, &#39;classifier__n_estimators&#39;: 50}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Acá podemos ver un diccionario que contiene los modelos ganadores para cada tipo, es decir,un modelo ganador para Support Vectors Machines, un ganador de RandomForest y otro ganador de GradientBoostingClassifier. Arriba podemos ver como le fue a cada uno en training</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_models</span><span class="p">[</span><span class="s1">&#39;SVC&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">ajuste_svc</span><span class="o">.</span><span class="n">best_estimator_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_models</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;RandomForestClassifier&#39;: Pipeline(steps=[(&#39;classifier&#39;, RandomForestClassifier(n_estimators=200))]),
+ &#39;GradientBoostingClassifier&#39;: Pipeline(steps=[(&#39;classifier&#39;,
+                  GradientBoostingClassifier(learning_rate=0.01, max_depth=10,
+                                             min_samples_split=10,
+                                             n_estimators=50))]),
+ &#39;SVC&#39;: Pipeline(steps=[(&#39;preprocessor&#39;,
+                  ColumnTransformer(remainder=&#39;passthrough&#39;,
+                                    transformers=[(&#39;num&#39;, StandardScaler(),
+                                                   [&#39;ELEVACION&#39;, &#39;PENDIENT&#39;,
+                                                    &#39;24h&#39;, &#39;7d&#39;, &#39;10d&#39;, &#39;15d&#39;,
+                                                    &#39;30d&#39;, &#39;60d&#39;, &#39;90d&#39;])])),
+                 (&#39;classifier&#39;, SVC(C=0.1, gamma=1, probability=True))])}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Acá buscamos saber cual de esas 3 clases de modelo diferentes es mejor, para eso los probamos con el conjunto de datos de validación visto anteriormente y obtenemos sus puntajes</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Evaluación de rendimiento en el conjunto de prueba</span>
+<span class="n">test_accuracies</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">best_models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_valid</span><span class="p">)</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">test_accuracies</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">accuracy</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Recall en test para </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Recall en test para RandomForestClassifier: 0.9514563106796117
+Recall en test para GradientBoostingClassifier: 0.941747572815534
+Recall en test para SVC: 0.9514563106796117
+</pre></div>
+</div>
+</div>
+</div>
+<p>Como vemos, el modelo ganador es Support Vector Machines con una recall (recuperación) de 95.2 % en validación</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Selección del mejor modelo basado en el rendimiento en el conjunto de test</span>
+<span class="c1"># best_model_name = max(test_accuracies, key=test_accuracies.get)</span>
+<span class="c1"># the_best_model = best_models[best_model_name]</span>
+<span class="n">the_best_model</span><span class="o">=</span><span class="n">best_models</span><span class="p">[</span><span class="s1">&#39;SVC&#39;</span><span class="p">]</span>
+
+<span class="c1"># print(f&quot;\nEl mejor modelo es: {best_model_name} con un accuracy en test de {test_accuracies[best_model_name]}&quot;)</span>
+<span class="n">the_best_model</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">El mejor modelo es: </span><span class="si">{</span><span class="n">the_best_model</span><span class="p">[</span><span class="s1">&#39;classifier&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> con un accuracy en test de </span><span class="si">{</span><span class="n">test_accuracies</span><span class="p">[</span><span class="s1">&#39;SVC&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>El mejor modelo es: SVC(C=0.1, gamma=1, probability=True) con un accuracy en test de 0.9514563106796117
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">the_best_model</span><span class="p">[</span><span class="s1">&#39;classifier&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>SVC(C=0.1, gamma=1, probability=True)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Miramos el reporte de métricas completas</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calcular las métricas para el SVC</span>
+<span class="n">y_pred_1</span> <span class="o">=</span> <span class="n">best_models</span><span class="p">[</span><span class="s1">&#39;SVC&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_valid</span><span class="p">)</span>
+<span class="n">precision1</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred_1</span><span class="p">)</span>
+<span class="n">recall1</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred_1</span><span class="p">)</span>
+<span class="n">accuracy1</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred_1</span><span class="p">)</span>
+<span class="n">f1_score1</span> <span class="o">=</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred_1</span><span class="p">)</span>
+
+<span class="c1"># Calcular las métricas para el RandomForest</span>
+<span class="n">y_pred2</span> <span class="o">=</span> <span class="n">best_models</span><span class="p">[</span><span class="s1">&#39;RandomForestClassifier&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_valid</span><span class="p">)</span>
+<span class="n">precision2</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred2</span><span class="p">)</span>
+<span class="n">recall2</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred2</span><span class="p">)</span>
+<span class="n">accuracy2</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred2</span><span class="p">)</span>
+<span class="n">f1_score2</span> <span class="o">=</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred2</span><span class="p">)</span>
+
+<span class="c1"># Calcular las métricas para el XGBoost</span>
+<span class="n">y_pred3</span> <span class="o">=</span> <span class="n">best_models</span><span class="p">[</span><span class="s1">&#39;GradientBoostingClassifier&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_valid</span><span class="p">)</span>
+<span class="n">precision3</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred3</span><span class="p">)</span>
+<span class="n">recall3</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred3</span><span class="p">)</span>
+<span class="n">accuracy3</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred3</span><span class="p">)</span>
+<span class="n">f1_score3</span> <span class="o">=</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_reporte</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Modelo&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Support Vector Classifier&#39;</span><span class="p">,</span> <span class="s1">&#39;Random Forest Classifier&#39;</span><span class="p">,</span> <span class="s1">&#39;XGBoost Classifier&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Precisión (Precision)&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">precision1</span><span class="p">,</span> <span class="n">precision2</span><span class="p">,</span> <span class="n">precision3</span><span class="p">],</span>
+    <span class="s1">&#39;Sensibilidad (Recall)&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">recall1</span><span class="p">,</span> <span class="n">recall2</span><span class="p">,</span> <span class="n">recall3</span><span class="p">],</span>
+    <span class="s1">&#39;Exactitud (Accuracy)&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">accuracy1</span><span class="p">,</span> <span class="n">accuracy2</span><span class="p">,</span> <span class="n">accuracy3</span><span class="p">],</span>
+    <span class="s1">&#39;F1-score&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">f1_score1</span><span class="p">,</span> <span class="n">f1_score2</span><span class="p">,</span> <span class="n">f1_score3</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">df_reporte</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_reporte</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="resumen-rendimiento-de-modelos">
+<h2>Resumen rendimiento de modelos<a class="headerlink" href="#resumen-rendimiento-de-modelos" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_reporte</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Modelo</th>
+      <th>Precisión (Precision)</th>
+      <th>Sensibilidad (Recall)</th>
+      <th>Exactitud (Accuracy)</th>
+      <th>F1-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Support Vector Classifier</td>
+      <td>0.695035</td>
+      <td>0.951456</td>
+      <td>0.747368</td>
+      <td>0.803279</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Random Forest Classifier</td>
+      <td>0.830508</td>
+      <td>0.951456</td>
+      <td>0.868421</td>
+      <td>0.886878</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>XGBoost Classifier</td>
+      <td>0.788618</td>
+      <td>0.941748</td>
+      <td>0.831579</td>
+      <td>0.858407</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="visibilidad-y-entendimiento-del-modelo">
+<h2>Visibilidad y entendimiento del modelo<a class="headerlink" href="#visibilidad-y-entendimiento-del-modelo" title="Link to this heading">#</a></h2>
+<p>En esta sección buscamos entender cómo es el modelo ganador, mediante varias tecnicas</p>
+<p>El “feature importance” (importancia de las características) en un modelo de aprendizaje automático, indica cuánto contribuye cada característica (o atributo) al rendimiento general del modelo en la tarea de predicción. Es una medida útil para entender qué características son más relevantes para la predicción de la variable objetivo.</p>
+<p>En este caso podemos ver que la variable <code class="docutils literal notranslate"><span class="pre">15d</span></code> (precipitación acumulada en los ultimos 10 dias en mm) aporta mas 50% en la prediccion del deslizamiento, dando a entender que es importante si se quiere estimar si hay deslizamientos o no</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Obtener la importancia de las características</span>
+<span class="n">feature_importances</span> <span class="o">=</span> <span class="n">best_models</span><span class="p">[</span><span class="s1">&#39;RandomForestClassifier&#39;</span><span class="p">][</span><span class="s1">&#39;classifier&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">feature_importances_</span>
+
+<span class="c1"># Obtener los nombres de las características</span>
+<span class="n">feature_names</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span>  <span class="c1"># Reemplaza esto con el nombre de tus características si tienes</span>
+
+<span class="c1"># Ordenar las características por su importancia</span>
+<span class="n">sorted_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">feature_importances</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">sorted_feature_importances</span> <span class="o">=</span> <span class="n">feature_importances</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>
+<span class="n">sorted_feature_names</span> <span class="o">=</span> <span class="n">feature_names</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>
+
+<span class="c1"># Graficar la importancia de las características</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">sorted_feature_names</span><span class="p">,</span> <span class="n">sorted_feature_importances</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Porcentaje  de importancia de las Variables&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Variables&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Importancia de las Variables (Modelo Ganador RandomForestClassifier)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/a4ad15246987f9b6850bfbc0d8ceee8e93e11b66b7d678b4d21fffc29635c25f.png" src="_images/a4ad15246987f9b6850bfbc0d8ceee8e93e11b66b7d678b4d21fffc29635c25f.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Obtener la importancia de las características</span>
+<span class="n">feature_importances</span> <span class="o">=</span> <span class="n">best_models</span><span class="p">[</span><span class="s1">&#39;GradientBoostingClassifier&#39;</span><span class="p">][</span><span class="s1">&#39;classifier&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">feature_importances_</span>
+
+<span class="c1"># Obtener los nombres de las características</span>
+<span class="n">feature_names</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span>  <span class="c1"># Reemplaza esto con el nombre de tus características si tienes</span>
+
+<span class="c1"># Ordenar las características por su importancia</span>
+<span class="n">sorted_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">feature_importances</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">sorted_feature_importances</span> <span class="o">=</span> <span class="n">feature_importances</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>
+<span class="n">sorted_feature_names</span> <span class="o">=</span> <span class="n">feature_names</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>
+
+<span class="c1"># Graficar la importancia de las características</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">sorted_feature_names</span><span class="p">,</span> <span class="n">sorted_feature_importances</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Porcentaje  de importancia de las Variables&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Variables&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Importancia de las Variables (Modelo Ganador GradientBoostingClassifier)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/3803bdb20c36bcd7be395ea6834164c1a571ae7964b9a27bd347a319502696c8.png" src="_images/3803bdb20c36bcd7be395ea6834164c1a571ae7964b9a27bd347a319502696c8.png" />
+</div>
+</div>
+</section>
+<section id="aplicacion-del-modelo">
+<h2>Aplicación del modelo<a class="headerlink" href="#aplicacion-del-modelo" title="Link to this heading">#</a></h2>
+<p>Esta sección tiene como objetivo aplicar el modelo ganador con los una captura de los datos de la API, los cuales estan en la variable <code class="docutils literal notranslate"><span class="pre">df_nuevos_datos</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definir función para anticipar probabilidades </span>
+<span class="k">def</span> <span class="nf">predecir_probabilidades</span><span class="p">(</span><span class="n">df_nuevos_datos</span><span class="p">,</span> <span class="n">modelo</span><span class="p">,</span> <span class="n">columnas</span><span class="p">):</span>
+    <span class="c1"># seleccionar columnas</span>
+    <span class="n">datos_seleccionados</span> <span class="o">=</span> <span class="n">df_nuevos_datos</span><span class="p">[</span><span class="n">columnas</span><span class="p">]</span>
+    <span class="c1"># Predecir probabilidades</span>
+    <span class="n">probabilidades</span> <span class="o">=</span> <span class="n">modelo</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">datos_seleccionados</span><span class="p">)[:,</span><span class="mi">1</span><span class="p">]</span>
+    <span class="c1"># Extraer las probabilidades para la clase positiva</span>
+    <span class="n">df_nuevos_datos</span><span class="p">[</span><span class="s1">&#39;Probabilidad&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">probabilidades</span>
+
+    <span class="k">return</span> <span class="n">df_nuevos_datos</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definir las características para el DataFrame</span>
+<span class="n">columnas_P</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ELEVACION&#39;</span><span class="p">,</span> <span class="s1">&#39;PENDIENT&#39;</span><span class="p">,</span> <span class="s1">&#39;24h&#39;</span><span class="p">,</span> <span class="s1">&#39;7d&#39;</span><span class="p">,</span> <span class="s1">&#39;10d&#39;</span><span class="p">,</span> <span class="s1">&#39;15d&#39;</span><span class="p">,</span> <span class="s1">&#39;30d&#39;</span><span class="p">,</span> <span class="s1">&#39;60d&#39;</span><span class="p">,</span> <span class="s1">&#39;90d&#39;</span><span class="p">]</span>
+
+<span class="c1"># Utilizar la función para predecir probabilidades en nuevos datos</span>
+<span class="n">probabilidades_nuevos_datos</span> <span class="o">=</span> <span class="n">predecir_probabilidades</span><span class="p">(</span><span class="n">df_nuevos_datos</span><span class="p">,</span> <span class="n">best_models</span><span class="p">[</span><span class="s1">&#39;SVC&#39;</span><span class="p">],</span><span class="n">columnas_P</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convierte la columna &#39;geometry&#39; a un DataFrame separado</span>
+<span class="n">df_p</span> <span class="o">=</span> <span class="n">probabilidades_nuevos_datos</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;geometry&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">probabilidades_nuevos_datos</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>FID</th>
+      <th>OBJECTID_1</th>
+      <th>COD_COB25_</th>
+      <th>NOM_COB25</th>
+      <th>SIM_COB25</th>
+      <th>GEOLOGIA_1</th>
+      <th>GEOLOGIA_2</th>
+      <th>ELEVACION</th>
+      <th>PENDIENT</th>
+      <th>Shape_Leng</th>
+      <th>...</th>
+      <th>id</th>
+      <th>24h</th>
+      <th>7d</th>
+      <th>10d</th>
+      <th>15d</th>
+      <th>30d</th>
+      <th>60d</th>
+      <th>90d</th>
+      <th>geometry</th>
+      <th>Probabilidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>31111</td>
+      <td>Bosque mixto denso alto de tierra firme</td>
+      <td>BNDALT</td>
+      <td>Ke</td>
+      <td>Formacion Espinal</td>
+      <td>2061.900391</td>
+      <td>53.671722</td>
+      <td>498.976929</td>
+      <td>...</td>
+      <td>23</td>
+      <td>65.6</td>
+      <td>115.0</td>
+      <td>0.0</td>
+      <td>148.0</td>
+      <td>189.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>POLYGON ((1044979.707 873707.899, 1044846.653 ...</td>
+      <td>0.824209</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>31111</td>
+      <td>Bosque mixto denso alto de tierra firme</td>
+      <td>BNDALT</td>
+      <td>Ke</td>
+      <td>Formacion Espinal</td>
+      <td>2127.599609</td>
+      <td>49.409256</td>
+      <td>995.407241</td>
+      <td>...</td>
+      <td>23</td>
+      <td>65.6</td>
+      <td>115.0</td>
+      <td>0.0</td>
+      <td>148.0</td>
+      <td>189.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>POLYGON ((1044979.752 873984.389, 1044719.714 ...</td>
+      <td>0.824209</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+      <td>31111</td>
+      <td>Bosque mixto denso alto de tierra firme</td>
+      <td>BNDALT</td>
+      <td>Ke</td>
+      <td>Formacion Espinal</td>
+      <td>2235.685791</td>
+      <td>22.863684</td>
+      <td>1026.961430</td>
+      <td>...</td>
+      <td>23</td>
+      <td>65.6</td>
+      <td>115.0</td>
+      <td>0.0</td>
+      <td>148.0</td>
+      <td>189.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>POLYGON ((1044979.796 874260.878, 1044775.326 ...</td>
+      <td>0.824209</td>
+    </tr>
+  </tbody>
+</table>
+<p>3 rows × 22 columns</p>
+</div></div></div>
+</div>
 </section>
 </section>
 
@@ -501,24 +1924,6 @@ with your book. For more information about this, see <a class="reference externa
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="markdown.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Markdown Files</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="markdown-notebooks.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -535,9 +1940,33 @@ with your book. For more information about this, see <a class="reference externa
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-y-seleccion-de-modelos-para-mejorar-metricas">Análisis Exploratorio y Selección de Modelos para mejorar métricas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-de-datos-eda">Analisis exploratorio de datos (EDA)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importacion-de-librerias">Importación de librerias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fuente-de-datos">Fuente de datos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importamos-los-datos">Importamos los datos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrizacion">Parametrización</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explorar-tendencias">Explorar tendencias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manejo-de-variables-categoricas">Manejo de variables categoricas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlaciones-entre-variables-independientes">Correlaciones entre variables independientes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-aprendizaje-automatico-propuestos">Modelos de aprendizaje automático propuestos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodologia-propuesta">Metodología propuesta</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metricas-de-evaluacion-propuestas">Métricas de Evaluación propuestas</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-metricas">Tipos de métricas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desarrollo">Desarrollo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-support-vector-machines">Modelo Support Vector Machines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-random-forest-y-gradient-boosting-classifier">Modelo Random Forest y Gradient Boosting Classifier</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen-rendimiento-de-modelos">Resumen rendimiento de modelos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visibilidad-y-entendimiento-del-modelo">Visibilidad y entendimiento del modelo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-del-modelo">Aplicación del modelo</a></li>
 </ul>
   </nav></div>
 
